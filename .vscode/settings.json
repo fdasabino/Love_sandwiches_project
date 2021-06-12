@@ -23,5 +23,8 @@
    "workbench.colorTheme": "Visual Studio Dark",
    "editor.defaultFormatter": "HookyQR.beautify",
    "editor.formatOnSave": true,
-   "python.pythonPath": "/bin/python3"
+   "python.pythonPath": "C:\\Users\\fdasa\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+   }
 }

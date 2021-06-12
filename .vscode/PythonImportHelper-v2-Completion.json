@@ -1,0 +1,73 @@
+[
+    {
+        "label": "gspread",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gspread",
+        "description": "gspread",
+        "detail": "gspread",
+        "documentation": {}
+    },
+    {
+        "label": "Credentials",
+        "importPath": "google.oauth2.service_account",
+        "description": "google.oauth2.service_account",
+        "isExtraImport": true,
+        "detail": "google.oauth2.service_account",
+        "documentation": {}
+    },
+    {
+        "label": "get_sales_data",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n    data_str = input(\"Enter your data here: \")\n    print(f\"The data provided is {data_str}\")\nget_sales_data()",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "SCOPE",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "SCOPE = [\n    \"https://www.googleapis.com/auth/spreadsheets\",\n    \"https://www.googleapis.com/auth/drive.file\",\n    \"https://www.googleapis.com/auth/drive\"\n    ]\nCREDS = Credentials .from_service_account_file('creds.json')\nSCOPED_CREDS = CREDS.with_scopes(SCOPE)\nGSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "CREDS",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "CREDS = Credentials .from_service_account_file('creds.json')\nSCOPED_CREDS = CREDS.with_scopes(SCOPE)\nGSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "SCOPED_CREDS",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "SCOPED_CREDS = CREDS.with_scopes(SCOPE)\nGSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "GSPREAD_CLIENT",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n    data_str = input(\"Enter your data here: \")",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "SHEET",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "SHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n    data_str = input(\"Enter your data here: \")\n    print(f\"The data provided is {data_str}\")",
+        "detail": "run",
+        "documentation": {}
+    }
+]
