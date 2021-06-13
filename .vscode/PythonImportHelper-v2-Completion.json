@@ -65,7 +65,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def main():\n    \"\"\"\n    Run all program functions.\n    \"\"\"    \n    data =  get_sales_data()\n    sales_data = [int(num) for num in data]\n    update_sales_worksheet(sales_data)\n    calculate_surplus_data(sales_data)\nprint(\"Welcome to Love Sandwiches data automation\")\nmain()",
+        "peekOfCode": "def main():\n    \"\"\"\n    Run all program functions.\n    \"\"\"    \n    data =  get_sales_data()\n    sales_data = [int(num) for num in data]\n    update_sales_worksheet(sales_data)\n    new_surplus_data = calculate_surplus_data(sales_data)\n    print(new_surplus_data)\nprint(\"Welcome to Love Sandwiches data automation\")",
         "detail": "run",
         "documentation": {}
     },
