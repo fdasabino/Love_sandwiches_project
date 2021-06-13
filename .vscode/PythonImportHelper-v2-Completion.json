@@ -17,6 +17,14 @@
         "documentation": {}
     },
     {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
         "label": "get_sales_data",
         "kind": 2,
         "importPath": "run",
@@ -39,7 +47,25 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def update_sales_worksheet(data):\n    \"\"\"\n    Update sales worksheet, add new row with the list data provided.\n    \"\"\"\n    print(\"Updating sales worksheet...\\n\")\n    sales_worksheet = SHEET.worksheet(\"sales\")\n    sales_worksheet.append_row(data)\n    print(\"Sales worksheet updated successfully.\\n\")\ndata =  get_sales_data()\nsales_data = [int(num) for num in data]",
+        "peekOfCode": "def update_sales_worksheet(data):\n    \"\"\"\n    Update sales worksheet, add new row with the list data provided.\n    \"\"\"\n    print(\"Updating sales worksheet...\\n\")\n    sales_worksheet = SHEET.worksheet(\"sales\")\n    sales_worksheet.append_row(data)\n    print(\"Sales worksheet updated successfully.\\n\")\ndef calculate_surplus_data(sales_row):\n    \"\"\"",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_surplus_data",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def calculate_surplus_data(sales_row):\n    \"\"\"\n    Compare sales with stock and calculate surplus for each item type.\n    The surplus is defined as the sales figure subtracted from the stock:\n    -Positive Surplus indicates waste.\n    -Negative surplus indicates extra made when stock was sold out.  \n    \"\"\"    \n    print(\"Calculating surplus data...\\n\")\n    stock = SHEET.worksheet(\"stock\").get_all_values()\n    stock_row = stock[-1]",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def main():\n    \"\"\"\n    Run all program functions.\n    \"\"\"    \n    data =  get_sales_data()\n    sales_data = [int(num) for num in data]\n    update_sales_worksheet(sales_data)\n    calculate_surplus_data(sales_data)\nprint(\"Welcome to Love Sandwiches data automation\")\nmain()",
         "detail": "run",
         "documentation": {}
     },
@@ -85,24 +111,6 @@
         "importPath": "run",
         "description": "run",
         "peekOfCode": "SHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    Run a while loop to collect valid data from the user\n    via the terminal, which must be a string of 6 numbers separated by\n    commas. The loop will repeat itself until valid data is passed.\n    \"\"\"\n    while True:\n        print(\"Please enter sales data from the last market.\")",
-        "detail": "run",
-        "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": "run",
-        "description": "run",
-        "peekOfCode": "data =  get_sales_data()\nsales_data = [int(num) for num in data]\nupdate_sales_worksheet(sales_data)",
-        "detail": "run",
-        "documentation": {}
-    },
-    {
-        "label": "sales_data",
-        "kind": 5,
-        "importPath": "run",
-        "description": "run",
-        "peekOfCode": "sales_data = [int(num) for num in data]\nupdate_sales_worksheet(sales_data)",
         "detail": "run",
         "documentation": {}
     }
