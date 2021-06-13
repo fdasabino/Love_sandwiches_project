@@ -21,7 +21,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n    data_str = input(\"Enter your data here: \")\n    sales_data = data_str.split(\",\")\n    validate_data(sales_data)",
+        "peekOfCode": "def get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    while True:\n        print(\"Please enter sales data from the last market.\")\n        print(\"Data should be six numbers, separated by commas.\")\n        print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n        data_str = input(\"Enter your data here: \")\n        sales_data = data_str.split(\",\")",
         "detail": "run",
         "documentation": {}
     },
@@ -48,7 +48,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "CREDS = Credentials .from_service_account_file('creds.json')\nSCOPED_CREDS = CREDS.with_scopes(SCOPE)\nGSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")",
+        "peekOfCode": "CREDS = Credentials .from_service_account_file('creds.json')\nSCOPED_CREDS = CREDS.with_scopes(SCOPE)\nGSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    while True:\n        print(\"Please enter sales data from the last market.\")",
         "detail": "run",
         "documentation": {}
     },
@@ -57,7 +57,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "SCOPED_CREDS = CREDS.with_scopes(SCOPE)\nGSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")",
+        "peekOfCode": "SCOPED_CREDS = CREDS.with_scopes(SCOPE)\nGSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    while True:\n        print(\"Please enter sales data from the last market.\")\n        print(\"Data should be six numbers, separated by commas.\")",
         "detail": "run",
         "documentation": {}
     },
@@ -66,7 +66,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n    data_str = input(\"Enter your data here: \")",
+        "peekOfCode": "GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)\nSHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    while True:\n        print(\"Please enter sales data from the last market.\")\n        print(\"Data should be six numbers, separated by commas.\")\n        print(\"Example: 10, 20, 30, 40, 50, 60\\n\")",
         "detail": "run",
         "documentation": {}
     },
@@ -75,7 +75,16 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "SHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    print(\"Please enter sales data from the last market.\")\n    print(\"Data should be six numbers, separated by commas.\")\n    print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n    data_str = input(\"Enter your data here: \")\n    sales_data = data_str.split(\",\")",
+        "peekOfCode": "SHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    \"\"\"\n    while True:\n        print(\"Please enter sales data from the last market.\")\n        print(\"Data should be six numbers, separated by commas.\")\n        print(\"Example: 10, 20, 30, 40, 50, 60\\n\")\n        data_str = input(\"Enter your data here: \")",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "data =  get_sales_data()",
         "detail": "run",
         "documentation": {}
     }
