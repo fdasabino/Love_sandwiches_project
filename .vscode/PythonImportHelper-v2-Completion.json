@@ -17,14 +17,6 @@
         "documentation": {}
     },
     {
-        "label": "pprint",
-        "importPath": "pprint",
-        "description": "pprint",
-        "isExtraImport": true,
-        "detail": "pprint",
-        "documentation": {}
-    },
-    {
         "label": "get_sales_data",
         "kind": 2,
         "importPath": "run",
