@@ -20,7 +20,7 @@
       "**/core.python*": true
    },
    "files.autoSave": "afterDelay",
-   "workbench.colorTheme": "Visual Studio Dark",
+   "workbench.colorTheme": "Cobalt2",
    "editor.defaultFormatter": "HookyQR.beautify",
    "editor.formatOnSave": true,
    "python.pythonPath": "C:\\Users\\fdasa\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
