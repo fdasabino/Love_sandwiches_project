@@ -71,6 +71,15 @@
         "documentation": {}
     },
     {
+        "label": "get_stock_values",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def get_stock_values(data):\n    \"\"\"\n    Print out the calculated stock numbers for each sandwich type.\n    \"\"\"\n    headings = SHEET.worksheet(\"stock\").get_all_values()[0]\n    # headings = SHEET.worksheet('stock').row_values(1)\n    print(\"Make the following numbers of sandwiches for next market:\\n\")\n    # new_data = {}\n    # for heading, stock_num in zip(headings, data):\n    #     new_data[heading] = stock_num",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
         "label": "main",
         "kind": 2,
         "importPath": "run",
@@ -121,6 +130,24 @@
         "importPath": "run",
         "description": "run",
         "peekOfCode": "SHEET = GSPREAD_CLIENT.open('love_sandwiches')\ndef get_sales_data():\n    \"\"\"\n    Get sales figures input from the user\n    Run a while loop to collect valid data from the user\n    via the terminal, which must be a string of 6 numbers separated by\n    commas. The loop will repeat itself until valid data is passed.\n    \"\"\"\n    while True:\n        print(\"Please enter sales data from the last market.\")",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "stock_data",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "stock_data = main()\nstock_values = get_stock_values(stock_data)\nprint(stock_values)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "stock_values",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "stock_values = get_stock_values(stock_data)\nprint(stock_values)",
         "detail": "run",
         "documentation": {}
     }
